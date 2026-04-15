@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Flame, Mic, Moon, Sun, X, Languages } from 'lucide-react';
+import { Flame, Mic, Moon, Sun, X } from 'lucide-react';
 import { useFeedbackStore } from '../store/useFeedbackStore';
 import { useTranslation } from 'react-i18next';
 
