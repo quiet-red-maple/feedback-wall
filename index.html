@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>i want</title>
+    <title>生活吐槽墙</title>
+    <meta
+      name="description"
+      content="生活吐槽墙：记录生活里的吐槽、建议与赞赏。发帖、点赞、评论，分享真实体验。"
+    />
+    <meta name="keywords" content="吐槽墙,树洞,生活吐槽,建议,赞赏,点赞,反馈" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="/" />
+    <meta name="theme-color" content="#0D0D12" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="生活吐槽墙" />
+    <meta
+      property="og:description"
+      content="生活吐槽墙：记录生活里的吐槽、建议与赞赏。发帖、点赞、评论，分享真实体验。"
+    />
+    <meta property="og:url" content="%VITE_SITE_URL%" />
+    <meta property="og:image" content="/favicon.svg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="生活吐槽墙" />
+    <meta
+      name="twitter:description"
+      content="生活吐槽墙：记录生活里的吐槽、建议与赞赏。发帖、点赞、评论，分享真实体验。"
+    />
+    <meta name="twitter:image" content="/favicon.svg" />
     <script type="module">
       if (import.meta.hot?.on) {
         import.meta.hot.on('vite:error', (error) => {
@@ -14,6 +39,19 @@
             )
           }
         })
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "生活吐槽墙",
+        "url": "%VITE_SITE_URL%",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "%VITE_SITE_URL%/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
   </head>

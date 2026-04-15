@@ -6,6 +6,7 @@ import { Header } from '../components/Header';
 import { CategoryFilter } from '../components/CategoryFilter';
 import { FeedbackCard } from '../components/FeedbackCard';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 export const Home: React.FC = () => {
   const feedbacks = useFeedbackStore((state) => state.feedbacks);
@@ -37,6 +38,13 @@ export const Home: React.FC = () => {
         ? 'bg-[#0D0D12] text-zinc-300 selection:bg-violet-500/30 selection:text-violet-200' 
         : 'bg-zinc-50 text-zinc-800 selection:bg-violet-500/20 selection:text-violet-900'
     }`}>
+      <Helmet>
+        <title>首页</title>
+        <meta
+          name="description"
+          content="生活吐槽墙：发布吐槽、建议与赞赏，点赞共鸣，评论互动。"
+        />
+      </Helmet>
       <Header />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 pb-24">

@@ -5,6 +5,7 @@ import { AlertTriangle, Lightbulb, Send } from 'lucide-react';
 import { useFeedbackStore, FeedbackType, ThemeDirection } from '../store/useFeedbackStore';
 import { Header } from '../components/Header';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 export const SubmitFeedback: React.FC = () => {
   const navigate = useNavigate();
@@ -22,7 +23,6 @@ export const SubmitFeedback: React.FC = () => {
     if (!title.trim() || !description.trim()) return;
     
     addFeedback({
-      // Keep DB compatibility: `product` column now stores generic topic/context text.
       product: topic.trim(),
       title,
       description,
@@ -40,6 +40,13 @@ export const SubmitFeedback: React.FC = () => {
         ? 'bg-[#0D0D12] text-zinc-300 selection:bg-violet-500/30 selection:text-violet-200' 
         : 'bg-zinc-50 text-zinc-800 selection:bg-violet-500/20 selection:text-violet-900'
     }`}>
+      <Helmet>
+        <title>发布</title>
+        <meta
+          name="description"
+          content="发布一条生活吐槽、建议或赞赏，让大家点赞共鸣。"
+        />
+      </Helmet>
       <Header />
       
       <main className="max-w-2xl mx-auto px-4 sm:px-6 pb-24">
