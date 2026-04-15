@@ -9,6 +9,7 @@ const themeColors: Record<FeedbackItem['theme'], string> = {
   too_slow: 'text-amber-400 bg-amber-400/10 border-amber-400/20',
   broken: 'text-rose-400 bg-rose-400/10 border-rose-400/20',
   new_idea: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
+  praise: 'text-sky-400 bg-sky-400/10 border-sky-400/20',
   other: 'text-slate-400 bg-slate-400/10 border-slate-400/20'
 };
 
@@ -80,7 +81,7 @@ export const FeedbackCard = React.forwardRef<HTMLDivElement, Props>(({ feedback,
           <div className="flex flex-col sm:flex-row sm:items-center gap-2">
             {feedback.product && (
               <span className="shrink-0 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-400 border border-violet-500/20">
-                [{feedback.product}]
+                #{feedback.product}
               </span>
             )}
             <h3 className={`text-lg font-medium transition-colors line-clamp-1 ${

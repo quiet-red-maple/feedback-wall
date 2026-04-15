@@ -13,7 +13,7 @@ export const SubmitFeedback: React.FC = () => {
   
   const [type, setType] = useState<FeedbackType>('feature');
   const [theme, setTheme] = useState<ThemeDirection>('other');
-  const [product, setProduct] = useState('');
+  const [topic, setTopic] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
@@ -22,7 +22,8 @@ export const SubmitFeedback: React.FC = () => {
     if (!title.trim() || !description.trim()) return;
     
     addFeedback({
-      product: product.trim(),
+      // Keep DB compatibility: `product` column now stores generic topic/context text.
+      product: topic.trim(),
       title,
       description,
       type,
@@ -114,6 +115,7 @@ export const SubmitFeedback: React.FC = () => {
                   <option value="broken">{t('categories.broken')}</option>
                   <option value="too_slow">{t('categories.too_slow')}</option>
                   <option value="new_idea">{t('categories.new_idea')}</option>
+                  <option value="praise">{t('categories.praise')}</option>
                   <option value="other">{t('categories.other')}</option>
                 </select>
               </div>
@@ -125,8 +127,8 @@ export const SubmitFeedback: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  value={product}
-                  onChange={(e) => setProduct(e.target.value)}
+                  value={topic}
+                  onChange={(e) => setTopic(e.target.value)}
                   placeholder={t('submit.product_placeholder')}
                   className={`w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all border ${
                     themeMode === 'dark'

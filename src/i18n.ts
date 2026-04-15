@@ -6,29 +6,30 @@ const resources = {
   zh: {
     translation: {
       header: {
-        title: '产品批斗大会',
-        subtitle: '大型人类早期驯服智障产品珍贵录像',
+        title: '生活吐槽墙',
+        subtitle: '任何离谱瞬间都值得被点赞',
         submit: '我要上台',
         cancel: '取消',
         language: 'EN'
       },
       home: {
         hero_title_1: '每一次激情开麦，',
-        hero_title_2: '都是产品经理掉头发的动力。',
-        hero_desc: '把你们在生活里吃过的屎、踩过的坑全喷出来吧！只要骂的人够多，咱们就拉产品经理出来祭天。至于解不解决……那得看产品经理的头发还剩多少（bushi）。',
-        search_placeholder: '搜一搜哪个倒霉蛋被骂得最惨...',
-        filter_title: '给这帮产品定个罪：',
+        hero_title_2: '都是生活经验值 +1。',
+        hero_desc: '工作、学习、通勤、社交、租房、外卖，任何让你上头的事都可以发。吐槽也好、建议也好，大家一起点赞共鸣。',
+        search_placeholder: '搜一搜你关心的话题...',
+        filter_title: '按类型筛选：',
         hot_title: '高赞惨案现场',
         sort_by: '吃瓜群众都在顶',
         empty_state: '居然没人开喷？这不科学！快来打响第一枪！'
       },
       categories: {
         all: '吃瓜大厅',
-        hard_to_use: '反人类设计',
-        broken: '动不动就崩',
-        too_slow: '卡成PPT',
-        new_idea: '做个白日梦',
-        other: '纯属泄愤'
+        hard_to_use: '很反人类',
+        broken: '离谱翻车',
+        too_slow: '拖延到爆',
+        new_idea: '灵感来了',
+        praise: '值得夸夸',
+        other: '其他吐槽'
       },
       card: {
         complaint: '愤怒开喷',
@@ -46,43 +47,44 @@ const resources = {
         type_complaint: '气死我了，开喷！',
         type_feature: '有个好点子',
         theme_label: '给它定个性：',
-        product_label: '哪个倒霉产品惹到你了？',
+        product_label: '这是关于什么话题/场景？',
         product_optional: '(选填)',
-        product_placeholder: '如：微信、那个破打卡软件...',
+        product_placeholder: '如：早高峰地铁、公司周会、外卖超时、室友作息...',
         summary_label: '用一句狠话总结',
         summary_placeholder: '如：这破按钮藏得比我私房钱还深',
         desc_label: '展开说说你的怨气（或脑洞）',
         desc_placeholder: '别收敛，尽情发挥，大伙儿就爱看这种！',
-        submit_btn: '发射！让产品经理颤抖吧 🚀'
+        submit_btn: '发射！让全网来评评理 🚀'
       }
     }
   },
   en: {
     translation: {
       header: {
-        title: 'Roast The Product',
-        subtitle: 'Where bad UX comes to die',
+        title: 'Life Roast Wall',
+        subtitle: 'Rant, relate, and upvote real-life pain points',
         submit: 'Take the Mic',
         cancel: 'Cancel',
         language: '中'
       },
       home: {
         hero_title_1: 'Every angry rant',
-        hero_title_2: 'costs a PM some hair.',
-        hero_desc: 'Spill the tea on all the terrible products that made you suffer! If enough people complain, we might sacrifice a PM. Will it get fixed? Depends on their remaining hairline (jk).',
-        search_placeholder: 'Search for the most roasted victim...',
-        filter_title: 'Convict these products:',
+        hero_title_2: 'adds +1 life wisdom.',
+        hero_desc: 'From work and commute to rent, food delivery, and social chaos: post any real-life complaint or idea. Let people upvote what truly resonates.',
+        search_placeholder: 'Search topics or situations...',
+        filter_title: 'Filter by type:',
         hot_title: 'Top Crime Scenes',
         sort_by: 'Sorted by upvotes',
         empty_state: 'Nobody is roasting? Unbelievable! Fire the first shot!'
       },
       categories: {
         all: 'All Drama',
-        hard_to_use: 'Anti-Human UX',
-        broken: 'Crash City',
-        too_slow: 'Slower than Sloth',
-        new_idea: 'Daydreaming',
-        other: 'Pure Rage'
+        hard_to_use: 'Painful to Use',
+        broken: 'Total Trainwreck',
+        too_slow: 'Painfully Slow',
+        new_idea: 'Fresh Idea',
+        praise: 'Shout-out',
+        other: 'Other Rants'
       },
       card: {
         complaint: 'Furious Roast',
@@ -100,14 +102,14 @@ const resources = {
         type_complaint: 'I am furious, let me roast!',
         type_feature: 'Got a brilliant idea',
         theme_label: 'Categorize the crime:',
-        product_label: 'Which poor product provoked you?',
+        product_label: 'What topic/situation is this about?',
         product_optional: '(Optional)',
-        product_placeholder: 'e.g. WeChat, that stupid clock-in app...',
+        product_placeholder: 'e.g. rush-hour subway, weekly standup, delayed delivery...',
         summary_label: 'One savage sentence summary',
         summary_placeholder: 'e.g. This button is hidden deeper than my secret stash',
         desc_label: 'Unleash your rage (or ideas)',
         desc_placeholder: 'Don\'t hold back, go wild! We love the drama!',
-        submit_btn: 'Launch! Make the PMs tremble 🚀'
+        submit_btn: 'Launch! Let the crowd decide 🚀'
       }
     }
   }

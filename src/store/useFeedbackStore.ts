@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 export type FeedbackType = 'complaint' | 'feature';
-export type ThemeDirection = 'hard_to_use' | 'broken' | 'too_slow' | 'new_idea' | 'other';
+export type ThemeDirection = 'hard_to_use' | 'broken' | 'too_slow' | 'new_idea' | 'praise' | 'other';
 
 export interface Comment {
   id: string;

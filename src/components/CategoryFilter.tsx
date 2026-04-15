@@ -14,6 +14,7 @@ export const CategoryFilter: React.FC = () => {
     { id: 'broken', labelKey: 'categories.broken' },
     { id: 'too_slow', labelKey: 'categories.too_slow' },
     { id: 'new_idea', labelKey: 'categories.new_idea' },
+    { id: 'praise', labelKey: 'categories.praise' },
     { id: 'other', labelKey: 'categories.other' },
   ];
 
